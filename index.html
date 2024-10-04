@@ -11,23 +11,25 @@
   body, html {
     margin: 0;
     padding: 0;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #unity-container {
     width: 90%;
     height: 90%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
   }
   #unity-canvas {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: block;
   }
-</style>
+  </style>
+
 
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -125,8 +127,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "90%";
-        canvas.style.height = "90%";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
